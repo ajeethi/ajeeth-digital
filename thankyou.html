@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Thank You | Ajeeth Digital</title>
+  <meta name="description" content="Thank you for reaching out to Ajeeth Digital. We'll contact you within 24 hours to schedule your free strategy call."/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- ═══ Tracking ═══ -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WN6V2XRG');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDBKGWQ3ZR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BDBKGWQ3ZR');
+  </script>
+  
+  <!-- Tracking: fires after form submission -->
+  <script>window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'thank_you_page_view'});</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+body{
+  min-height:100vh;
+  background:#0d1117;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* BG */
+.bg-grid{
+  position:fixed;inset:0;
+  background-image:linear-gradient(rgba(11,95,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(11,95,255,.07) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,.6) 15%,rgba(0,0,0,.6) 85%,transparent);
+  pointer-events:none;z-index:0;
+}
+.glow-1{position:fixed;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(11,95,255,.12) 0%,transparent 65%);top:-200px;left:-100px;pointer-events:none;animation:breathe 6s ease-in-out infinite}
+.glow-2{position:fixed;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.08) 0%,transparent 65%);bottom:-150px;right:-100px;pointer-events:none;animation:breathe 8s ease-in-out infinite reverse}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.15);opacity:.7}}
+
+/* CARD */
+.card{
+  position:relative;z-index:1;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:32px;
+  padding:60px 56px;
+  max-width:600px;width:calc(100% - 32px);
+  text-align:center;
+  backdrop-filter:blur(20px);
+  box-shadow:0 40px 100px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.04);
+  animation:popIn .7s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes popIn{from{opacity:0;transform:scale(.88) translateY(24px)}to{opacity:1;transform:none}}
+
+/* CHECK */
+.check-wrap{
+  width:96px;height:96px;border-radius:50%;
+  background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(22,163,74,.08));
+  border:2px solid rgba(34,197,94,.25);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 32px;
+  position:relative;
+  animation:checkPop .6s cubic-bezier(.34,1.56,.64,1) .3s both;
+}
+@keyframes checkPop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+.check-wrap::before{
+  content:'';position:absolute;inset:-6px;border-radius:50%;
+  border:2px solid rgba(34,197,94,.15);
+  animation:ringPulse 2s ease-in-out infinite;
+}
+@keyframes ringPulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.1);opacity:.2}}
+.check-wrap svg{width:44px;height:44px;stroke:#22c55e;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* TEXT */
+.tag{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:6px 16px;margin-bottom:20px;
+  background:rgba(34,197,94,.1);
+  border:1px solid rgba(34,197,94,.2);
+  border-radius:999px;
+  font-size:.76rem;font-weight:700;color:#22c55e;
+  text-transform:uppercase;letter-spacing:.1em;
+  animation:fadeUp .5s ease .2s both;
+}
+.tag-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+h1{
+  font-family:'Outfit',sans-serif;
+  font-size:clamp(2rem,5vw,2.8rem);
+  font-weight:900;color:#fff;
+  line-height:1.15;letter-spacing:-.03em;
+  margin-bottom:18px;
+  animation:fadeUp .5s ease .25s both;
+}
+h1 span{
+  background:linear-gradient(135deg,#0B5FFF,#6366F1);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+
+.subtitle{
+  font-size:1rem;color:rgba(255,255,255,.6);
+  line-height:1.75;margin-bottom:36px;
+  animation:fadeUp .5s ease .3s both;
+}
+
+/* STEPS */
+.steps{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:20px;padding:28px 24px;
+  display:flex;flex-direction:column;gap:16px;
+  margin-bottom:36px;text-align:left;
+  animation:fadeUp .5s ease .35s both;
+}
+.step{display:flex;align-items:flex-start;gap:14px}
+.step-num{
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,#0B5FFF,#6366F1);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Outfit',sans-serif;font-weight:800;font-size:.8rem;color:#fff;
+  flex-shrink:0;
+}
+.step-txt{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.6;padding-top:5px}
+.step-txt strong{color:#fff}
+
+/* ACTIONS */
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:fadeUp .5s ease .4s both}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:15px 28px;border-radius:999px;
+  font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600;
+  transition:all .3s ease;text-decoration:none;cursor:pointer;border:none;
+}
+.btn-primary{background:linear-gradient(135deg,#0B5FFF,#6366F1);color:#fff;box-shadow:0 8px 24px rgba(11,95,255,.3)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(11,95,255,.4)}
+.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 24px rgba(37,211,102,.25)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(37,211,102,.35)}
+.btn-ghost{color:rgba(255,255,255,.5);font-size:.84rem;padding:12px 18px}
+.btn-ghost:hover{color:#fff}
+
+/* CONTACT LINE */
+.contact-line{
+  margin-top:32px;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.07);
+  font-size:.84rem;color:rgba(255,255,255,.4);
+  animation:fadeUp .5s ease .45s both;
+}
+.contact-line a{color:#60a5fa;font-weight:600;text-decoration:none;transition:.2s}
+.contact-line a:hover{color:#93c5fd}
+
+/* LOGO */
+.logo{
+  position:fixed;top:24px;left:50%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:10px;
+  font-family:'Outfit',sans-serif;font-weight:900;font-size:1.2rem;color:#fff;
+  z-index:10;text-decoration:none;
+  animation:fadeUp .5s ease both;
+}
+.logo-mark{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,#0B5FFF,#6366F1);
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-mark svg{width:18px;height:18px;stroke:#fff;stroke-width:2.5;fill:none}
+
+/* COUNTDOWN */
+.countdown{
+  font-size:.8rem;color:rgba(255,255,255,.35);
+  margin-top:12px;
+  animation:fadeUp .5s ease .5s both;
+}
+
+/* CONFETTI DOTS */
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.dot{
+  position:absolute;width:8px;height:8px;border-radius:50%;
+  animation:fall linear infinite;opacity:0;
+}
+@keyframes fall{
+  0%{opacity:1;transform:translateY(-20px) rotate(0deg)}
+  100%{opacity:0;transform:translateY(110vh) rotate(360deg)}
+}
+
+@media(max-width:600px){
+  .card{padding:40px 24px}
+  h1{font-size:1.9rem}
+  .actions{flex-direction:column}
+  .btn{justify-content:center;width:100%}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN6V2XRG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Background -->
+<div class="bg-grid"></div>
+<div class="glow-1"></div>
+<div class="glow-2"></div>
+
+<!-- Confetti -->
+<div class="confetti" id="confetti" aria-hidden="true"></div>
+
+<!-- Logo -->
+<a href="index.html" class="logo">
+  <div class="logo-mark">
+    <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+  </div>
+  Ajeeth Digital
+</a>
+
+<!-- Main Card -->
+<div class="card" role="main">
+
+  <!-- Badge -->
+  <div class="tag"><span class="tag-dot"></span>Request Received</div>
+
+  <!-- Check icon -->
+  <div class="check-wrap" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+
+  <h1>You're All Set!<br/><span>We'll Be in Touch Soon.</span></h1>
+
+  <p class="subtitle">
+    Thank you for reaching out to Ajeeth Digital.<br/>
+    Your request has been received successfully.
+  </p>
+
+  <!-- What Happens Next -->
+  <div class="steps" role="list" aria-label="What happens next">
+    <div class="step" role="listitem">
+      <div class="step-num">1</div>
+      <div class="step-txt"><strong>We'll call or WhatsApp you</strong> at +91 70101 39380 within 24 hours to confirm your free strategy call.</div>
+    </div>
+    <div class="step" role="listitem">
+      <div class="step-num">2</div>
+      <div class="step-txt"><strong>Your 30-minute strategy session</strong> — we'll analyse your business, identify growth opportunities, and build a custom plan.</div>
+    </div>
+    <div class="step" role="listitem">
+      <div class="step-num">3</div>
+      <div class="step-txt"><strong>You'll leave with clarity</strong> — a clear picture of what's possible and exactly what we'd do to grow your business. Zero obligation.</div>
+    </div>
+  </div>
+
+  <!-- CTAs -->
+  <div class="actions">
+    <a href="https://wa.me/917010139380?text=Hi%2C%20I%20just%20submitted%20the%20form%20on%20your%20website.%20Looking%20forward%20to%20the%20strategy%20call!" class="btn btn-wa" target="_blank" rel="noopener" onclick="gtag&&gtag('event','thankyou_wa_click')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Chat on WhatsApp
+    </a>
+    <a href="index.html" class="btn btn-primary">
+      ← Back to Home
+    </a>
+  </div>
+
+  <p class="countdown" id="countdown">Redirecting to home in <strong id="cnum">10</strong> seconds...</p>
+
+  <!-- Contact line -->
+  <div class="contact-line">
+    Questions? Call or WhatsApp us directly at
+    <a href="tel:+917010139380">+91 70101 39380</a>
+  </div>
+
+</div>
+
+<script>
+/* Confetti animation */
+const colors=['#0B5FFF','#6366F1','#22c55e','#F59E0B','#EC4899','#3B82F6'];
+const container=document.getElementById('confetti');
+for(let i=0;i<40;i++){
+  const d=document.createElement('div');
+  d.className='dot';
+  d.style.cssText=`
+    left:${Math.random()*100}%;
+    background:${colors[Math.floor(Math.random()*colors.length)]};
+    width:${6+Math.random()*8}px;
+    height:${6+Math.random()*8}px;
+    animation-duration:${3+Math.random()*4}s;
+    animation-delay:${Math.random()*3}s;
+    border-radius:${Math.random()>0.5?'50%':'3px'};
+    opacity:${0.4+Math.random()*0.6};
+  `;
+  container.appendChild(d);
+}
+
+/* Countdown redirect */
+let count=10;
+const cnum=document.getElementById('cnum');
+const timer=setInterval(()=>{
+  count--;
+  if(cnum)cnum.textContent=count;
+  if(count<=0){
+    clearInterval(timer);
+    window.location.href='index.html';
+  }
+},1000);
+
+/* Track page view */
+window.dataLayer=window.dataLayer||[];
+window.dataLayer.push({event:'thank_you_page_loaded',timestamp:new Date().toISOString()});
+</script>
+</body>
+</html>
