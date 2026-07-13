@@ -2069,7 +2069,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="contact-form-box reveal-right">
         <h3 class="cf-title">Request Free Strategy Call</h3>
         <p class="cf-sub">Fill out the form below and we'll reach out within 24 hours to schedule your call.</p>
-        <form id="cform" onsubmit="formSubmit(event)" novalidate aria-label="Contact form">
+        <form id="cform" name="contact" data-netlify="true" onsubmit="formSubmit(event)" novalidate aria-label="Contact form">
           <div class="form-row">
             <div class="fg">
               <label for="cn">Your Name <span>*</span></label>
@@ -2409,7 +2409,18 @@ function formSubmit(e){
   });
   if(typeof fbq!=='undefined')fbq('track','Lead');
   if(typeof gtag!=='undefined')gtag('event','generate_lead');
-  setTimeout(()=>{ window.location.href='thankyou.html'; },1200);
+  
+  // Submit to Netlify
+  const formData = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => {
+    window.location.href='thankyou.html';
+  }).catch(() => {
+    window.location.href='thankyou.html'; // Redirect even if error so user isn't stuck
+  });
 }
 
 /* ── SCROLL DEPTH ── */
